@@ -1,13 +1,19 @@
-__import__(number)
 
-range = 0
-
-user_name = raw_input("What's your name?")
-highest_number = raw_input("Pick a random number")
-
-number = randon.randit
-    if x < highest_number:
-        print "Your guess is too low."
-
-    if x >
-#Starting to get it
+name = raw_input("What is your name?")
+upper_bound = input("What is your highest value?")
+tries = 0
+guess = input("What number do you think it is?")
+import random
+answer = random.randint(0,upper_bound)
+print answer
+while guess!= answer:
+    if guess > answer:
+        print "Too high!"
+    elif guess < answer:
+        print "Too low"
+    guess = input("What number do you think it is?")
+    tries = tries +1
+if tries==1:
+    print name,"You got it right! It is",answer
+else:
+    print name,"it took you",tries,"tries."
