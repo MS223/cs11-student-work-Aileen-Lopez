@@ -7,8 +7,7 @@ def mystery_function(x, y):
     else:
         z = x * y
     return z
-mystery_function(1, 2)
-print "hi"
+print mystery_function(1, 2)
 
 #when I run this code, ot just says "process finished with exit code 0"
-#I made it print "Hi" and it did print. 
+#it printed 3 
